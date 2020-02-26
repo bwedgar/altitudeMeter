@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<!-- bwedgar.github.io/altitudeMeter   -->
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="apple-touch-icon" href="launch3.png">
+  <link rel="apple-touch-startup-image" href="launch3.png">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="canonical" href="https://bwedgar.github.io/PushToTelescope" />
+
+  <title>Document</title>
+  <meta name="apple-mobile-web-app-title" content="Push To Telescope">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+  <script src="https://bwedgar.github.io/buttons/buttons.js"></script>
+  <!-- <script src="../buttons/buttons.js"></script> -->
+
+  <!-- <script src="sw.js"></script> -->
+
+</head>
+
+
+<body>
+  <script>
+    var geoSuccessHandler = function (position) {
+      console.log(position.coords);
+    };
+
+    navigator.geolocation.getCurrentPosition(geoSuccessHandler);
+  </script>
+</body>
+
+</html>
